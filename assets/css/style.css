@@ -6,6 +6,10 @@
   color: rgb(5, 188, 5) !important;
 }
 
+.white {
+  color: white !important;
+}
+
 .bg-dark {
   background-color: rgb(53, 58, 64) !important;
 }
@@ -20,4 +24,8 @@
 
 .btn-success:hover {
   background-color: rgb(28, 128, 50) !important;
+}
+
+.orador {
+  border: none !important;
 }
