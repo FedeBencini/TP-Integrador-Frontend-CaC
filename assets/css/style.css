@@ -18,6 +18,28 @@
   filter: opacity(0.4) contrast(1.5) !important;
 }
 
+@media (max-width: 645px) {
+  #bsasPic {
+    height: 75vh;
+    object-fit: cover;
+  }
+  #honoluluPic {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 415px) {
+  #bsasPic {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 350px) {
+  #bsasCardText {
+    font-size: 0.75em;
+  }
+}
+
 .btn-success {
   background-color: rgb(41, 167, 68) !important;
 }
@@ -28,4 +50,35 @@
 
 .orador {
   border: none !important;
+}
+
+#textArea {
+  height: 100px !important;
+}
+
+.enviar {
+  background-color: rgb(150, 201, 62) !important;
+  border: 1px solid rgb(150, 201, 62) !important;
+}
+
+.enviar:hover {
+  background-color: rgb(41, 167, 68) !important;
+  border: 1px solid rgb(41, 167, 68) !important;
+}
+
+#footerNavbar {
+  background-color: rgb(28, 63, 83) !important;
+}
+
+#footerNavbar .white:hover {
+  text-decoration: underline !important;
+}
+
+.ignite {
+  color: inherit;
+  border-bottom: 1px dotted black;
+}
+
+.ignite:hover {
+  color: inherit !important;
 }
