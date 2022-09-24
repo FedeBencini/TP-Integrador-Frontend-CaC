@@ -15,18 +15,77 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- Probar agregar sticky-top  -->
-      <div class="container-md">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            id="logoimg"
+            src="./assets/images/codoacodo.png"
+            alt="logo codo a codo"
+            class="d-inline-block align-text-center w-25"
+          />
+          Conf Bs As
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#cacNavbar"
+          aria-controls="cacNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="cacNavbar"
+        >
+          <div class="navbar-nav navbar-nav-scroll">
+            <a href="#" class="nav-link active m-1">La conferencia</a>
+            <a href="#" class="navbar-text nav-link m-1">Los oradores</a>
+            <a href="#" class="navbar-text nav-link m-1">El lugar y la fecha</a>
+            <a href="#" class="navbar-text nav-link m-1"
+              >Conviértete en orador</a
+            >
+            <a href="#" class="nav-link active green m-1">Comprar tickets</a>
+          </div>
+        </div>
       </div>
     </nav>
-
     <!-- Section 1 Card: Intro a la izq -->
-    <section></section>
+    <section>
+      <div class="card text-end text-bg-dark">
+        <img
+          src="./assets/images/ba1.jpg"
+          class="card-img"
+          alt="buenos aires"
+        />
+        <div
+          class="card-body card-img-overlay d-flex flex-column justify-content-center align-items-end me-5"
+        >
+          <h1 class="card-title">Conf Bs As</h1>
+          <p class="card-text w-50">
+            Bs As llega por primera vez a Argentina. Un evento para compartir
+            con nuestra comunidad el conocimiento y experiencia de los expertos
+            que están creando el futuro de Internet. Ven a conocer a miembros
+            del evento, a otros estudiantes de Codo a Codo y los oradores de
+            primer nivel que tenemos para ti. Te esperamos!
+          </p>
+          <div>
+            <button class="btn btn-outline-light">Quiero ser orador</button>
+            <a href="#" class="btn btn-success ms-1">Comprar tickers</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section 2 Card: Oradores centro -->
-    <section></section>
+    <section>
+      <p class="text-uppercase fs-6 fw-lighter">Conoce a los</p>
+      <h1 class="text-uppercase fs-1 fw-semibold">Oradores</h1>
+    </section>
 
     <!-- Section 3 Card?: Foto y texto a la der -->
     <section></section>

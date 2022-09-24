@@ -1,0 +1,23 @@
+.green {
+  color: rgb(41, 167, 68) !important;
+}
+
+.green:hover {
+  color: rgb(5, 188, 5) !important;
+}
+
+.bg-dark {
+  background-color: rgb(53, 58, 64) !important;
+}
+
+.card-img {
+  filter: opacity(0.4) contrast(1.5) !important;
+}
+
+.btn-success {
+  background-color: rgb(41, 167, 68) !important;
+}
+
+.btn-success:hover {
+  background-color: rgb(28, 128, 50) !important;
+}
