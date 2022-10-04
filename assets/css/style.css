@@ -40,6 +40,11 @@
   }
 }
 
+#buttonLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 .btn-success {
   background-color: rgb(41, 167, 68) !important;
 }

@@ -42,10 +42,16 @@
           id="cacNavbar"
         >
           <div class="navbar-nav navbar-nav-scroll">
-            <a href="#" class="nav-link active m-1">La conferencia</a>
-            <a href="#" class="navbar-text nav-link m-1">Los oradores</a>
-            <a href="#" class="navbar-text nav-link m-1">El lugar y la fecha</a>
-            <a href="#" class="navbar-text nav-link m-1"
+            <a href="#conferencia" class="nav-link active m-1"
+              >La conferencia</a
+            >
+            <a href="#oradores" class="navbar-text nav-link m-1"
+              >Los oradores</a
+            >
+            <a href="#lugarYFecha" class="navbar-text nav-link m-1"
+              >El lugar y la fecha</a
+            >
+            <a href="#conviertete" class="navbar-text nav-link m-1"
               >Conviértete en orador</a
             >
             <a href="#" class="nav-link active green m-1">Comprar tickets</a>
@@ -54,7 +60,7 @@
       </div>
     </nav>
     <!-- Section 1 -->
-    <section>
+    <section id="conferencia">
       <div class="card text-end text-bg-dark">
         <img
           src="./assets/images/ba1.jpg"
@@ -74,7 +80,9 @@
             primer nivel que tenemos para ti. Te esperamos!
           </p>
           <div>
-            <button class="btn btn-outline-light">Quiero ser orador</button>
+            <button class="btn btn-outline-light">
+              <a id="buttonLink" href="#conviertete">Quiero ser orador</a>
+            </button>
             <a href="#" class="btn btn-success ms-1">Comprar tickers</a>
           </div>
         </div>
@@ -82,7 +90,7 @@
     </section>
 
     <!-- Section 2 -->
-    <section>
+    <section id="oradores">
       <div class="d-flex flex-column align-items-center">
         <p class="text-uppercase fw-lighter mt-2 mb-0">Conoce a los</p>
         <h1 class="text-uppercase fs-1 fw-semibold">Oradores</h1>
@@ -152,7 +160,7 @@
     </section>
 
     <!-- Section 3 -->
-    <section>
+    <section id="lugarYFecha">
       <div class="card text-bg-dark bg-dark">
         <div class="row">
           <div class="col">
@@ -181,7 +189,7 @@
     </section>
 
     <!-- Section 4 -->
-    <section class="mx-auto w-50 pt-4">
+    <section id="conviertete" class="mx-auto w-50 pt-4">
       <div class="d-flex flex-column align-items-center">
         <p class="text-uppercase fw-lighter mt-2 mb-0">Conviértete en un</p>
         <h1 class="text-uppercase fs-1 fw-semibold">Orador</h1>
