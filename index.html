@@ -15,9 +15,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand col-3" href="#"
+        <a class="navbar-brand col-3" href="#conferencia"
           ><img
             id="logoimg"
             src="./assets/images/codoacodo.png"
@@ -54,7 +54,9 @@
             <a href="#conviertete" class="navbar-text nav-link m-1"
               >Conviértete en orador</a
             >
-            <a href="#" class="nav-link active green m-1">Comprar tickets</a>
+            <a href="#tickets" class="nav-link active green m-1"
+              >Comprar tickets</a
+            >
           </div>
         </div>
       </div>
@@ -233,6 +235,126 @@
       <button class="btn btn-success w-100 enviar my-3">Enviar</button>
     </section>
 
+    <!-- Section 5 (TP Int JS) -->
+    <section id="tickets" class="mx-auto w-75 pt-4">
+      <div class="container d-flex flex-column align-items-center">
+        <div
+          id="descuentos"
+          class="container d-flex align-items-center justify-content-center my-2"
+        >
+          <div
+            id="estudiante"
+            class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 me-1"
+          >
+            <h4 class="tituloDescuento">Estudiante</h4>
+            <p>Tienen un descuento</p>
+            <h4>80%</h4>
+            <small>* presentar documentación</small>
+          </div>
+          <div
+            id="trainee"
+            class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 mx-1"
+          >
+            <h4 class="tituloDescuento">Trainee</h4>
+            <p>Tienen un descuento</p>
+            <h4>50%</h4>
+            <small>* presentar documentación</small>
+          </div>
+          <div
+            id="junior"
+            class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 ms-1"
+          >
+            <h4 class="tituloDescuento">Junior</h4>
+            <p>Tienen un descuento</p>
+            <h4>15%</h4>
+            <small>* presentar documentación</small>
+          </div>
+        </div>
+      </div>
+      <div id="valorTicket" class="d-flex flex-column align-items-center my-2">
+        <p>VENTA</p>
+        <h1>VALOR DE TICKET $200</h1>
+      </div>
+      <div
+        id="formTicket"
+        class="container d-flex flex-column align-items-start w-75 my-2"
+      >
+        <div class="row w-100 mb-3">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+              required
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+              required
+            />
+          </div>
+        </div>
+        <div class="row w-100 me-0 mb-3">
+          <div class="col">
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              placeholder="Correo"
+              required
+            />
+          </div>
+        </div>
+        <div class="row w-100 mb-3">
+          <div class="col">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input
+              id="cantidad"
+              type="number"
+              class="form-control"
+              placeholder="Cantidad"
+              aria-label="Cantidad"
+              min="1"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="categoria" class="form-label">Categoria</label>
+            <select id="categoria" class="form-select">
+              <option value="ninguno" selected>Ninguno</option>
+              <option value="estudiante">Estudiante</option>
+              <option value="trainee">Trainee</option>
+              <option value="junior">Junior</option>
+            </select>
+          </div>
+        </div>
+        <div id="totalPagar" class="row w-100 me-0 mb-3 my-3">
+          <div class="col">
+            <div id="totalPagarText" class="p-3 bg-info bg-opacity-25">
+              Total a Pagar: $ <span id="total"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 mb-3">
+          <div class="col">
+            <button id="borrarBtn" class="btn btn-success w-100 enviar my-3">
+              Borrar
+            </button>
+          </div>
+          <div class="col">
+            <button id="resumBtn" class="btn btn-success w-100 enviar my-3">
+              Resumen
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer
       id="footerNavbar"
@@ -266,7 +388,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./assets/js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

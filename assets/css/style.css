@@ -1,3 +1,31 @@
+/* Navbar doesn´t block content */
+#conferencia::before,
+#oradores::before,
+#conviertete::before,
+#tickets::before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin: -30px 0 0;
+}
+
+#lugarYFecha::before {
+  content: "";
+  display: block;
+  height: 48px;
+  margin: -30px 0 0;
+}
+
+@media (min-width: 1000px) {
+  #lugarYFecha::before {
+    content: "";
+    display: block;
+    height: 70px;
+    margin: -30px 0 0;
+  }
+}
+
+/* Style TP Integrador Front End Bootstrap */
 .green {
   color: rgb(41, 167, 68) !important;
 }
@@ -59,6 +87,7 @@
 
 #textArea {
   height: 100px !important;
+  resize: none;
 }
 
 .enviar {
@@ -72,7 +101,11 @@
 }
 
 #footerNavbar {
-  background-color: rgb(28, 63, 83) !important;
+  background: linear-gradient(
+    to right,
+    rgb(31, 55, 68),
+    rgb(30, 82, 112)
+  ) !important;
 }
 
 #footerNavbar .white:hover {
@@ -86,4 +119,46 @@
 
 .ignite:hover {
   color: inherit !important;
+}
+
+/* Styles TP Integrador JS */
+#tickets {
+  height: 90vh;
+}
+
+#estudiante {
+  border: 1px solid dodgerblue;
+}
+
+#trainee {
+  border: 1px solid darkturquoise;
+}
+
+#junior {
+  border: 1px solid gold;
+}
+
+#descuentos div {
+  height: 12em;
+}
+
+small {
+  color: dimgray;
+}
+
+#descuentos div:hover {
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: 0.3s ease-out;
+}
+
+#descuentos div:hover .tituloDescuento {
+  border-bottom: 1px solid black;
+  transition: 0.1s ease-in;
+}
+
+#totalPagarText {
+  border-radius: 0.375rem;
+  color: midnightblue;
+  font-weight: 500;
 }
