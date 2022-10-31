@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -236,157 +236,165 @@
     </section>
 
     <!-- Section 5 (TP Int JS) -->
-    <section id="tickets" class="mx-auto w-75 pt-4">
-      <div class="container d-flex flex-column align-items-center">
-        <div
-          id="descuentos"
-          class="container d-flex align-items-center justify-content-center my-2"
-        >
+    <section id="tickets" class="container-fluid mx-auto pt-4">
+      <div class="row">
+        <div class="col-1 col-lg-3"></div>
+        <div class="col-10 col-lg-6">
           <div
-            id="estudiante"
-            class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 me-1"
+            id="categoriasDescuentos"
+            class="d-flex align-items-center justify-content-center w-100"
           >
-            <h4 class="tituloDescuento">Estudiante</h4>
-            <p>Tienen un descuento</p>
-            <h4>80%</h4>
-            <small>* presentar documentación</small>
+            <div
+              id="descuentos"
+              class="container d-flex align-items-center justify-content-center my-2"
+            >
+              <div
+                id="estudiante"
+                class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 me-1"
+              >
+                <h4 class="tituloDescuento">Estudiante</h4>
+                <p>Tienen un descuento</p>
+                <h4>80%</h4>
+                <small>* presentar documentación</small>
+              </div>
+              <div
+                id="trainee"
+                class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 mx-1"
+              >
+                <h4 class="tituloDescuento">Trainee</h4>
+                <p>Tienen un descuento</p>
+                <h4>50%</h4>
+                <small>* presentar documentación</small>
+              </div>
+              <div
+                id="junior"
+                class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 ms-1"
+              >
+                <h4 class="tituloDescuento container">Junior</h4>
+                <p>Tienen un descuento</p>
+                <h4>15%</h4>
+                <small>* presentar documentación</small>
+              </div>
+            </div>
           </div>
           <div
-            id="trainee"
-            class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 mx-1"
+            id="valorTicket"
+            class="d-flex flex-column align-items-center my-2"
           >
-            <h4 class="tituloDescuento">Trainee</h4>
-            <p>Tienen un descuento</p>
-            <h4>50%</h4>
-            <small>* presentar documentación</small>
+            <p>VENTA</p>
+            <h1>VALOR DE TICKET $200</h1>
           </div>
           <div
-            id="junior"
-            class="d-flex flex-column align-items-center justify-content-evenly px-4 py-2 ms-1"
+            id="formTicket"
+            class="container d-flex flex-column justify-content-center w-100 my-2"
           >
-            <h4 class="tituloDescuento">Junior</h4>
-            <p>Tienen un descuento</p>
-            <h4>15%</h4>
-            <small>* presentar documentación</small>
-          </div>
-        </div>
-      </div>
-      <div id="valorTicket" class="d-flex flex-column align-items-center my-2">
-        <p>VENTA</p>
-        <h1>VALOR DE TICKET $200</h1>
-      </div>
-      <div
-        id="formTicket"
-        class="container d-flex flex-column align-items-start w-75 my-2"
-      >
-        <div class="row w-100 mb-3">
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="First name"
-              aria-label="First name"
-              required
-            />
-          </div>
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Last name"
-              aria-label="Last name"
-              required
-            />
-          </div>
-        </div>
-        <div class="row w-100 me-0 mb-3">
-          <div class="col">
-            <input
-              type="email"
-              class="form-control"
-              id="correo"
-              placeholder="Correo"
-              required
-            />
-          </div>
-        </div>
-        <div class="row w-100 mb-3">
-          <div class="col">
-            <label for="cantidad" class="form-label">Cantidad</label>
-            <input
-              id="cantidad"
-              type="number"
-              class="form-control"
-              placeholder="Cantidad"
-              aria-label="Cantidad"
-              min="1"
-              required
-            />
-          </div>
-          <div class="col">
-            <label for="categoria" class="form-label">Categoria</label>
-            <select id="categoria" class="form-select">
-              <option value="ninguno" selected>Ninguno</option>
-              <option value="estudiante">Estudiante</option>
-              <option value="trainee">Trainee</option>
-              <option value="junior">Junior</option>
-            </select>
-          </div>
-        </div>
-        <div id="totalPagar" class="row w-100 me-0 mb-3 my-3">
-          <div class="col">
-            <div id="totalPagarText" class="p-3 bg-info bg-opacity-25">
-              Total a Pagar: $ <span id="total"></span>
+            <div class="row w-100 mb-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  aria-label="First name"
+                  required
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  aria-label="Last name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row w-100 me-0 mb-3 pe-0">
+              <div class="col">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo"
+                  placeholder="Correo"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row w-100 mb-3">
+              <div class="col">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input
+                  id="cantidad"
+                  type="number"
+                  class="form-control"
+                  placeholder="Cantidad"
+                  aria-label="Cantidad"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="col">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select id="categoria" class="form-select">
+                  <option value="ninguno" selected>Ninguno</option>
+                  <option value="estudiante">Estudiante</option>
+                  <option value="trainee">Trainee</option>
+                  <option value="junior">Junior</option>
+                </select>
+              </div>
+            </div>
+            <div id="totalPagar" class="row w-100 me-0 mb-3 my-3">
+              <div class="col">
+                <div id="totalPagarText" class="p-3 bg-info bg-opacity-25">
+                  Total a Pagar: $ <span id="total"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row w-100 mb-3">
+              <div class="col">
+                <button
+                  id="borrarBtn"
+                  class="btn btn-success w-100 enviar my-3"
+                >
+                  Borrar
+                </button>
+              </div>
+              <div class="col">
+                <button id="resumBtn" class="btn btn-success w-100 enviar my-3">
+                  Resumen
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row w-100 mb-3">
-          <div class="col">
-            <button id="borrarBtn" class="btn btn-success w-100 enviar my-3">
-              Borrar
-            </button>
-          </div>
-          <div class="col">
-            <button id="resumBtn" class="btn btn-success w-100 enviar my-3">
-              Resumen
-            </button>
-          </div>
-        </div>
       </div>
+      <div class="col-1 col-lg-3"></div>
     </section>
 
     <!-- Footer -->
-    <footer
-      id="footerNavbar"
-      class="nav navbar-expand navbar-dark bg-primary justify-content-center align-items-center"
-    >
-      <div class="container p-1 p-lg-2">
-        <div
-          class="navbar-nav d-flex flex-wrap justify-content-evenly align-items-center"
+    <footer id="footerNavbar">
+      <nav
+        class="container-fluid nav navbar-expand d-flex flex-wrap justify-content-evenly p-0 p-md-1 py-lg-2"
+      >
+        <a class="nav-link col-3 col-lg-1 text-center white" href="#"
+          >Preguntas Frecuentes</a
         >
-          <a class="nav-link col-3 col-lg-1 text-center white" href="#"
-            >Preguntas Frecuentes</a
-          >
-          <a class="nav-link col-3 col-lg-1 text-center white" href="#"
-            >Contáctenos</a
-          >
-          <a class="nav-link col-3 col-lg-1 text-center white" href="#"
-            >Prensa</a
-          >
-          <a class="nav-link col-3 col-lg-1 text-center white" href="#"
-            >Conferencias</a
-          >
-          <a class="nav-link col-3 col-lg-1 text-center white" href="#"
-            >Términos y condiciones</a
-          >
-          <a class="nav-link col-3 col-lg-1 text-center white" href="#"
-            >Privacidad</a
-          >
-          <a class="nav-link col-3 col-lg-1 text-center white" href="#"
-            >Estudiantes</a
-          >
-        </div>
-      </div>
+        <a class="nav-link col-3 col-lg-1 text-center white" href="#"
+          >Contáctenos</a
+        >
+        <a class="nav-link col-3 col-lg-1 text-center white" href="#">Prensa</a>
+        <a class="nav-link col-3 col-lg-1 text-center white" href="#"
+          >Conferencias</a
+        >
+        <a class="nav-link col-4 col-lg-1 text-center white" href="#"
+          >Términos y condiciones</a
+        >
+        <a class="nav-link col-3 col-lg-1 text-center white" href="#"
+          >Privacidad</a
+        >
+        <a class="nav-link col-3 col-lg-1 text-center white" href="#"
+          >Estudiantes</a
+        >
+      </nav>
     </footer>
     <script src="./assets/js/script.js"></script>
     <script

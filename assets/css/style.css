@@ -29,19 +29,15 @@
 .green {
   color: rgb(41, 167, 68) !important;
 }
-
 .green:hover {
   color: rgb(5, 188, 5) !important;
 }
-
 .white {
   color: white !important;
 }
-
 .bg-dark {
   background-color: rgb(53, 58, 64) !important;
 }
-
 .card-img {
   filter: opacity(0.4) contrast(1.5) !important;
 }
@@ -55,13 +51,11 @@
     object-fit: cover;
   }
 }
-
 @media (max-width: 415px) {
   #bsasPic {
     height: 100vh;
   }
 }
-
 @media (max-width: 350px) {
   #bsasCardText {
     font-size: 0.75em;
@@ -72,11 +66,9 @@
   text-decoration: none !important;
   color: inherit !important;
 }
-
 .btn-success {
   background-color: rgb(41, 167, 68) !important;
 }
-
 .btn-success:hover {
   background-color: rgb(28, 128, 50) !important;
 }
@@ -84,32 +76,9 @@
 .orador {
   border: none !important;
 }
-
 #textArea {
   height: 100px !important;
   resize: none;
-}
-
-.enviar {
-  background-color: rgb(150, 201, 62) !important;
-  border: 1px solid rgb(150, 201, 62) !important;
-}
-
-.enviar:hover {
-  background-color: rgb(41, 167, 68) !important;
-  border: 1px solid rgb(41, 167, 68) !important;
-}
-
-#footerNavbar {
-  background: linear-gradient(
-    to right,
-    rgb(31, 55, 68),
-    rgb(30, 82, 112)
-  ) !important;
-}
-
-#footerNavbar .white:hover {
-  text-decoration: underline !important;
 }
 
 .ignite {
@@ -120,39 +89,53 @@
 .ignite:hover {
   color: inherit !important;
 }
+.enviar {
+  background-color: rgb(150, 201, 62) !important;
+  border: 1px solid rgb(150, 201, 62) !important;
+}
+.enviar:hover {
+  background-color: rgb(41, 167, 68) !important;
+  border: 1px solid rgb(41, 167, 68) !important;
+}
+
+#footerNavbar .white:hover {
+  text-decoration: underline !important;
+}
 
 /* Styles TP Integrador JS */
+#footerNavbar {
+  background: linear-gradient(
+    to right,
+    rgb(31, 55, 68),
+    rgb(30, 82, 112)
+  ) !important;
+}
+
+#formTicket {
+  padding-right: 0 !important;
+}
+
 #tickets {
   height: 90vh;
 }
-
 #estudiante {
   border: 1px solid dodgerblue;
 }
-
 #trainee {
   border: 1px solid darkturquoise;
 }
-
 #junior {
   border: 1px solid gold;
 }
-
 #descuentos div {
-  height: 12em;
+  /*height: 12em;*/
   user-select: none;
 }
-/*
-small {
-  color: dimgray;
-}
-*/
 #descuentos div:hover {
   cursor: pointer;
   transform: translateY(5px);
   transition: 0.3s ease-out;
 }
-
 #descuentos div:hover .tituloDescuento {
   text-decoration: underline;
   transition: 0.1s ease-in;
